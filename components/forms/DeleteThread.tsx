@@ -56,9 +56,9 @@ function DeleteThread({
           onClick={async () => {
             setIsDeleting(true);
             await deleteThread(JSON.parse(threadId), pathname);
-            if (!parentId || !isComment) {
-              router.push("/");
-            }
+            // if (!parentId || !isComment) {
+            //   router.push("/");
+            // }
             setIsDeleting(false);
           }}
         />
