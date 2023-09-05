@@ -126,7 +126,7 @@ function ThreadCard({
 
       {!isComment && comments.length > 0 && (
         <div className="ml-1 mt-3 flex items-center gap-2">
-          {comments.slice(0, 2).map((comment, index) => (
+          {comments.slice(0, 3).map((comment, index) => (
             <Image
               key={index}
               src={comment.author.image}
