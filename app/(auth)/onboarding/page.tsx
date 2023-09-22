@@ -7,10 +7,8 @@ import React from "react";
 
 const page = async () => {
   const user = await currentUser();
-  console.log("🚀 ~ file: page.tsx:6 ~ page ~ user:", user);
 
   const dataFetched = await fetchUser(user?.id);
-  console.log("🚀 ~ file: page.tsx:12 ~ page ~ dataFetched:", dataFetched);
   if (dataFetched?.onboarded) redirect("/");
 
   const userInfo = {};

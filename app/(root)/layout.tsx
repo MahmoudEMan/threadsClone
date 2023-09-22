@@ -6,8 +6,7 @@ import Topbar from "@/components/shared/Topbar";
 import LeftBar from "@/components/shared/LeftBar";
 import RightBar from "@/components/shared/RightBar";
 import BottomBar from "@/components/shared/BottomBar";
-import { SignedOut, SignedIn, ClerkLoading } from "@clerk/nextjs";
-import { MutatingDots } from "react-loader-spinner";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
